@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="components/fontawesome-web/css/all.min.css">
+
+    <!-- fonts  -->
+    <link rel="stylesheet" href="components/font/font.css">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Js</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                <h2>My First JavaScript</h2>
+                
+                <!-- date  -->
+
+                <button type="button" class="btn btn-success" 
+                onclick="myDate()">
+                Click me to display Date and Time.</button>
+                
+                <p id="demo"></p>
+                <!-- change contant  -->
+                <p id="change">JavaScript can change HTML content.</p>
+            
+                <button type="button" class="btn btn-success"  onclick="myFuntion()">Click Me!</button>
+
+                <!-- change attribute  -->
+
+                <h2>Js change attribute</h2>
+                <button class="btn btn-success" type="button" onclick="document.getElementById('img').src='img/1.jpg'">1st img</button>
+                <img id="img" src="img/1.jpg" alt="">
+
+                <button class="btn btn-success" type="button" onclick="document.getElementById('img').src='img/2.jpg'">2nd</button>
+                
+                <!-- show x y z are variable  -->
+                <p id="declared"></p>
+                <button type="button" class="btn btn-danger" onclick="myText()">Click Here</button>
+
+                <!-- show x y z are let  -->
+                <p id="store"></p>
+                <button type="button" class="btn btn-danger" onclick="myHome()">Click Here</button>
+
+                <!-- show x y z are const  -->
+                <p id="general"></p>
+                <button type="button" class="btn btn-danger" onclick="myRule()">Click Here</button>
+
+                <!-- show x y z are arithmetic  -->
+                <p id="arithmetic"></p>
+                <button type="button" class="btn btn-info" onclick="myTypical()">Click Here</button>
+
+                <!-- show  number and string  -->
+                <p id="multiple"></p>
+                <button type="button" class="btn btn-info" onclick="myMultiple()">Click Here</button>
+
+                <!-- show  number and string  -->
+                <p id="mulone"></p>
+                <button type="button" class="btn btn-info" onclick="myMulone()">Click Here</button>
+                
+
+                <!-- change icon  -->
+                <button type="button"><i class="fa-solid fa-bars" onclick="chnageCon(this)"></i></button>
+                
+                <button type="submit"><i class="fa-solid fa-bars" onclick="chnageIcon(this)"></i></button>
+                
+
+                <!-- get contant  -->
+                <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, beatae?</p>
+                <button type="button" class="btn btn-info btn1">Click one</button>
+                <button type="button" class="btn btn-info btn2">Click two</button>
+
+                <!-- set contant attribute  -->
+                <p id="text1">I Love Bangladesh</p>
+                <p id="text2">I Love my country</p>
+                <p><input type="text" name="fname" id="fname" value="Tanzir Rahman"></p>
+                <button type="button" id="btn1">Button text</button>
+                <button type="button" id="btn2">Buttontwo</button>
+                <button type="button" id="btn3">Button input</button>
+
+                <!-- call back funtion  -->
+                <p id="textcall">I Love Bangladesh</p>
+                <p id="textcall2">I Love Bangladesh</p>
+                <button type="button" id="btncall1">Buttontwo</button>
+
+                <button type="button" id="btncall2">Button input</button>
+
+                <!-- append  -->
+                <p id="appendtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
+                <p id="appendtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
+                <ol>
+                    <li>Bangladesh</li>
+                    <li>Dhaka</li>
+                    <li>Joypurhat</li>
+                </ol>
+
+                <button type="button" id="btnappend1">Button</button>
+
+                <button type="button" id="btnappend2">Button</button>
+
+                <!-- prepend  -->
+                <p id="prependtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
+                <p id="prependtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
+                <ol id="ol">
+                    <li>Bangladesh</li>
+                    <li>Dhaka</li>
+                    <li>Joypurhat</li>
+                </ol>
+
+                <button type="button" id="btnprepend1">Button</button>
+
+                <button type="button" id="btnprepend2">Button</button>
+
+                <!-- before after method  -->
+                <img src="img/1.jpg" class="img-fluid w-25" alt="">
+                <button type="button" id="btnafter">Button</button>
+
+                <button type="button" id="btnbefore">Button</button>
+
+                <!-- remove and empty  -->
+                <div class="bg-danger border border-1 w-50" id="div1">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="bg-danger border border-1 w-50" id="div2">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <button type="button" id="remove">Remove</button>
+                <button type="button" id="empty">empty</button>
+
+                <!-- add classess  -->
+                <h1 class="p">Lorem ipsum dolor sit amet consectetur.</h1>
+                <h2 class="p">Lorem ipsum dolor sit amet consectetur.</h2>
+                <p class="p">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="p">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="classhead">Bangladesh is our country</div>
+
+                <button type="button" id="class">ADD </button>
+
+                <!-- bind  -->
+                <p id="bind1">click me</p>
+
+                <!-- blur method  -->
+                inter your text: <input type="text" name="fname" id="input">
+                <p>Write something in the input field, and then click outside the field to lose focus (blur).</p>
+
+                <!-- change  -->
+                inter your text: <input type="text" name="fname" id="changetext">
+                <p>Write something in the input field, and then press enter or click outside the field.</p>
+
+                <!-- hide-show  -->
+                <p class="p">I Love BAngladesh</p>
+                <button type="button" class="btn btn-success" id="hide">hide</button>
+                <button type="button" class="btn btn-success" id="show">show</button>
+
+                <!-- toggle  -->
+                <button type="button" class="btn btn-info" id="toggle">Click and the content toggole</button>
+                <p id="togg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aspernatur?</p>
+
+                <!-- fade out  -->
+                <button type="button" class="btn btn-secondary c-btn">Fade in contant</button>
+                <div id="fade0" class=" h-25 w-50 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nisi.</div>
+                <div id="fade1" class=" h-25 w-50 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nisi.</div>
+                <div id="fade2" class=" h-25 w-50 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nisi.</div>
+                    
+                <!-- slide toggle  -->
+                <h2 id="slide" class="bg-success">Tanzir Rahman Rifat</h2>
+                <p id="slidetoggle" class="bg-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto itaque harum maxime ut a dolore provident dolor praesentium delectus? Est!</p>
+
+                <!-- animated  -->
+                <button type="button" class="btn btn-danger" id="animate">hover and the content animated</button>
+
+                <div class="bg-success w-25 h-25" id="animate1"></div>
+
+                <!-- slide down and stop  -->
+                <button type="button" class="btn btn-dark" id="stopsl">stop</button>
+
+                <button type="submit" id="clicksl" class="btn btn-infu">Clik and Down</button>
+                <p id="slide" class="bg-danger d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt optio vitae dolores provident, molestias dolorum eum id nisi fuga quidem, doloribus asperiores suscipit sunt quaerat blanditiis iusto, voluptatibus tempora?</p>
+
+                <!-- callback  -->
+                <button type="button" class="btn btn-dark" id="call">hide</button>
+                <p id="callitem" class="bg-danger">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                <!-- chainng  -->
+                <p id="chaing">Tanzir Rahman</p>
+                <button id="chngbtn">click</button>
+
+                <!-- current html  -->
+                <h2>Selects the current html hide</h2>
+                <button type="button" class="btn btn-dark" id="current">hide</button>
+                <p class="bg-danger">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <!-- hide event  -->
+                
+                <p class="bg-danger" id="phide">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <!-- js statement  -->
+                <p id="state"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- js links  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
